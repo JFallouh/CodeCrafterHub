@@ -1,13 +1,30 @@
 <!DOCTYPE html>
+<!-- 
+Class: WEBSITE DESIGN - 420-WB4-AB
+Assignment: Final Project
+
+Team 4
+    Craig Collins (1038789)
+    James Fallouh (6171620)
+    SeyedehFatemeh Fekribaygi (6284424)
+
+    Current Date: TBD
+    Filename: index.html
+
+    Purpose: This a website homepage.
+-->
+
 <html lang="fr">
 
 <head>
-  <!-- Meta tags -->
+  <!-- Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="modèle bootstrap">
-  <meta name="author" content="Équipe 4, Craig Collins, James Fallouh, SeyedehFatemeh Fekribaygi">
-  <meta name="keywords" content="codage, développement web, programmation, conception web, blog">
+  <meta name="author" content="Team 4, Craig Collins, James Fallouh, SeyedehFatemeh Fekribaygi">
+  <meta name="keywords" content="codage, développement web, programmation, design web, blog">
+
+  <!-- Favicon -->
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,30 +33,57 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles/custom.css">
 
-  <!-- Custom CSS -->
+  <!-- Custom SCSS -->
   <link rel="stylesheet" href="styles/custom.css">
 
-  <!-- This section extends dropdown menu on hover for services and about us -->
+  <!-- this expands the dropdown on hover for both services and about us -->
   <style>
     .nav-item.dropdown:hover .dropdown-menu {
       display: block;
     }
+
+    /* Logo Styles */
+    .navbar-brand {
+      font-size: 30px;
+      font-weight: bold;
+      color: #007bff; /* Blue color for 'JF' */
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #ffffff; /* White background */
+      text-shadow: none;
+      border: 3px solid #ffffff;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 15px rgba(0, 86, 179, 0.7);
+    }
   </style>
 
-  <!-- Page Title -->
   <title lang="fr">Accueil</title>
+  <!-- optional javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="Script/script.js"></script>
+
 </head>
 
 <body>
 
-  <!-- Bootstrap Navbar -->
-  
+  <!-- bootstrap header / navigation bar -->
   <nav class="navbar navbar-expand-lg bg-primary bg-gradient text-white">
     <div class="container-fluid">
-      <img class="navbar-brand rounded rounded-4" alt="Logo de Awesome code crafter" src="Vista-Logos-Blue/logo-png.png" height="100" width="100">
+      <a class="navbar-brand" href="#">JF</a>
 
-
-      <!-- Button for toggling dropdown menu on mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,181 +91,195 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <!-- HOME PAGE -->
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="index-fr.html">Accueil</a>
           </li>
 
-          <!-- Services Page -->
-          <li class="nav-item services-dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="webpages/francais/services/services.html" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
+          <!-- Service Page-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="webpages/french/services/services.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Services</a>
             <ul class="dropdown-menu bg-primary bg-gradient text-white">
-              <li><a class="dropdown-item text-white" href="webpages/francais/services/programming.html">Programmation</a>
-              </li>
-              <li><a class="dropdown-item text-white" href="webpages/francais/services/web-development.html">Développement web</a></li>
-              <li><a class="dropdown-item text-white" href="webpages/francais/services/databases.html">Bases de données</a></li>
-              <li><a class="dropdown-item text-white" href="webpages/francais/services/website-design.html">Conception de sites web</a></li>
+              <li><a class="dropdown-item text-white" href="webpages/french/services/services.html">Services</a></li>
+              <li><a class="dropdown-item text-white" href="webpages/french/services/programming.html">Programmation</a></li>
+              <li><a class="dropdown-item text-white" href="webpages/french/services/web-development.html">Développement Web</a></li>
+              <li><a class="dropdown-item text-white" href="webpages/french/services/databases.html">Bases de données</a></li>
+              <li><a class="dropdown-item text-white" href="webpages/french/services/website-design.html">Design de site Web</a></li>
             </ul>
           </li>
 
-          <!-- Portfolio Page -->
+          <!-- Portfolio-->
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page"
-              href="webpages/francais/portfolio.html">Portefeuille</a>
+            <a class="nav-link active text-white" aria-current="page" href="webpages/french/portfolio.html">Portfolio</a>
           </li>
 
-          <!-- Blog Page -->
+          <!--Blog-->
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="webpages/francais/blog.html">Blogue</a>
+            <a class="nav-link active text-white" aria-current="page" href="webpages/french/blog.html">Blog</a>
           </li>
 
-          <!-- About Us Page -->
-          <li class="nav-item about-us-dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="webpages/francais/about-us/about-us.html" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              À propos
-            </a>
-            <ul class="dropdown-menu bg-primary bg-gradient ">
-<!--               <li><a class="dropdown-item text-white" href="webpages/francais/about-us/craig-collins.html">Craig Collins</a></li> -->
-              <li><a class="dropdown-item text-white" href="webpages/francais/about-us/james-fallouh.html">James Fallouh</a></li>
-<!--               <li><a class="dropdown-item text-white"
-                  href="webpages/francais/about-us/fatemeh-fekribaygi.html">SeyedehFatemeh Fekribaygi</a></li> -->
+          <!-- About Us -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="webpages/french/about-us/about-us.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">À propos de nous</a>
+            <ul class="dropdown-menu bg-primary bg-gradient">
+              <li><a class="dropdown-item text-white" href="webpages/french/about-us/about-us.html">À propos de nous</a></li>
+              <li><a class="dropdown-item text-white" href="webpages/french/about-us/james-fallouh.html">James Fallouh</a></li>
             </ul>
           </li>
 
-          <!-- Contact Us Page -->
+          <!--Contact Us-->
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="webpages/francais/contact-us.html">Contactez-nous</a>
+            <a class="nav-link active text-white" aria-current="page" href="webpages/french/contact-us.html">Contactez-nous</a>
           </li>
         </ul>
-        <!-- Search Form -->
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
-          <a href="index-en.html" class="text-white">English</a>
+          <input id="NavSearch" name="NavSearch" class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+          <a href="index-en.html" class="text-white me-3">English</a>
+          <a href="james_fallouh_cv.pdf" class="btn btn-light text-primary">Télécharger CV</a>
         </form>
       </div>
     </div>
   </nav>
+  <!-- navbar links -->
 
-  <!-- Header -->
+  <!-- bootstrap jumbotron -->
+
+  <!-- header and hero image -->
+  <!--======================= header=======================-->
   <header class="visually-hidden">
-    <h1 class="text-white">Awesome Code Crafter Hub</h1>
+    <h1 class="text-white">Hub de Codeurs Géniaux</h1>
   </header>
+  <!-- main content area -->
 
-  <!-- Main Content -->
+  <!--======================= main ===================-->
   <main id="home-main">
-    <div class="home-main-container  text-center">
+    <div class="home-main-container text-center">
       <div class="row justify-content-center">
         <div class="col d-flex flex-column align-items-center p-3">
           <section class="First-row-text-section">
-          <img src="animations/Business-Analysis.gif" class="home-main-image" alt="Serveur">
-        </section>
-      </div>
+            <h6 style="display:none">hide</h6>
+            <img src="animations/Business-Analysis.gif" class="home-main-image" alt="Serveur">
+          </section>
+        </div>
         <div class="col d-flex flex-column align-items-center p-3">
           <section class="First-row-text-section">
-          <h3>Awesome Code Crafter Hub</h3>
-          <p>Bienvenue dans notre coin du web ! Nous sommes une équipe dynamique de développeurs full-stack aspirants qui partagent une passion pour la création de sites web innovants et captivants. En tant qu'étudiants dans le passionnant voyage de maîtrise de l'art du développement web, nous apportons un ensemble diversifié de compétences et de perspectives à la table. Nos efforts collaboratifs sont alimentés par un engagement commun envers l'excellence, la créativité et l'apprentissage continu. Que ce soit pour créer des expériences utilisateur fluides, concevoir des interfaces accrocheuses ou plonger dans les subtilités du développement back-end, nous sommes stimulés par les défis que propose la conception web. Rejoignez-nous dans cette aventure passionnante, et construisons quelque chose de remarquable ensemble ! </p><a href="#">en savoir plus</a>
-        </section></div>
+            <h3>Hub de Codeurs Géniaux</h3>
+            <p>Bienvenue sur notre coin du web ! Nous sommes une équipe dynamique de développeurs full-stack en herbe qui
+              partagent une passion pour la création de sites web innovants et captivants. En tant qu'étudiants sur le
+              chemin passionnant de la maîtrise de l'art du développement web, nous apportons un ensemble diversifié de
+              compétences et de perspectives. Nos efforts collaboratifs sont alimentés par un engagement commun envers
+              l'excellence, la créativité et l'apprentissage continu. Qu'il s'agisse de créer des expériences
+              utilisateur fluides, de concevoir des interfaces accrocheuses, ou de plonger dans les subtilités du
+              développement back-end, nous prospérons grâce aux défis que le design web offre. Rejoignez-nous dans cette
+              aventure excitante, et construisons ensemble quelque chose de remarquable !</p><a href="#">en savoir plus</a>
+          </section>
+        </div>
       </div>
-    </div>
+    </div> <!--home main container-->
+    <!--======================= first row=======================-->
 
-    <!-- Services Section -->
+    <!--=======================Second row=======================-->
     <section class="main-header bg-primary bg-gradient text-white">
-      <a href="webpages/francais/services/services.html" class="text-white">
-        <h2>Services</h2>
+      <a href="webpages/french/services/services.html" class="text-white">
+        <h2>Service</h2>
       </a>
     </section>
 
+    <!--=======================Third row=======================-->
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col d-flex flex-column align-items-center p-3">
           <section class="home-main-section">
+            <h6 style="display:none">hide</h6>
             <img src="animations/User-interface-research.gif" alt="Image de programmeur" class="home-main-service">
-            <a href="webpages/francais/services/programming.html">Programmation</a>
+            <a href="webpages/french/services/programming.html">Programmation</a>
           </section>
         </div>
         <div class="col d-flex flex-column align-items-center p-3">
           <section class="home-main-section">
-            <img src="animations/Video-Marketing.gif" alt="Image de clavier et téléphone portable et tasse"
-              class="home-main-service">
-            <a href="webpages/english/services/web-development.html">Développement web</a>
+            <h6 style="display:none">hide</h6>
+            <img src="animations/Video-Marketing.gif" alt="Image de clavier, téléphone et tasse" class="home-main-service">
+            <a href="webpages/french/services/web-development.html">Développement Web</a>
           </section>
         </div>
         <div class="col d-flex flex-column align-items-center p-3">
           <section class="home-main-section">
+            <h6 style="display:none">hide</h6>
             <img src="animations/Designer-building-website.gif" alt="Image de serveur" class="home-main-service">
-            <a href="webpages/francais/services/databases.html">Bases de données</a>
+            <a href="webpages/french/services/databases.html">Bases de données</a>
           </section>
         </div>
         <div class="col d-flex flex-column align-items-center p-3">
+          <h6 style="display:none">hide</h6>
           <section class="home-main-section">
-            <img src="animations/Working-chart.gif" alt="Image d'écran de designer" class="home-main-service">
-            <a href="webpages/francais/services/website-design.html">Conception de sites web</a>
+            <h6 style="display:none">hide</h6>
+            <img src="animations/Working-chart.gif" alt="Image de conception" class="home-main-service">
+            <a href="webpages/french/services/website-design.html">Design de site Web</a>
           </section>
         </div>
       </div>
     </div>
 
-    <!-- Portfolio Section -->
+    <!--======================= Fourth row =======================-->
     <section class="main-header bg-primary bg-gradient text-white">
-      <a href="webpages/francais/portfolio.html" class="text-white">
-        <h2>Portefeuille</h2>
+      <a href="webpages/french/portfolio.html" class="text-white">
+        <h2>Portfolio</h2>
       </a>
     </section>
 
+    <!--======================= Fifth row =======================-->
     <div id="portfolio-row">
-
       <section class="home-main-section">
+        <h6 style="display:none">hide</h6>
         <img src="animations/Designer-building-website.gif" alt="Image d'une personne créant des notes" class="home-main-image">
         <a href="#">Projet 1</a>
       </section>
 
-
       <section class="home-main-section">
-        <img src="animations/Busines-group-meeting.gif" alt="Image de personne mettant des épingles sur le mur"
-          class="home-main-image">
+        <h6 style="display:none">hide</h6>
+        <img src="animations/Busines-group-meeting.gif" alt="Image d'une personne plaçant des épingles sur le mur" class="home-main-image">
         <a href="#">Projet 2</a>
       </section>
 
       <section class="home-main-section">
+        <h6 style="display:none">hide</h6>
         <img src="animations/Video-Marketing.gif" alt="Image de personnes travaillant sur un projet" class="home-main-image">
         <a href="#">Projet 3</a>
       </section>
-
     </div>
 
-    <!-- Blog Section -->
+    <!--======================= Sixth row =======================-->
     <section class="main-header bg-primary bg-gradient text-white">
-      <a href="webpages/francais/blog.html" class="text-white">
-        <h2>Articles principaux</h2>
+      <h6 style="display:none">hide</h6>
+      <a href="webpages/french/blog.html" class="text-white">
+        <h2>Meilleurs Articles</h2>
       </a>
     </section>
 
+    <!--======================= Seventh row =======================-->
     <div id="blog-row" style="padding: 20px;">
-      <a href="webpages/francais/blog-article.html" style="text-decoration: none;">
+      <a href="webpages/french/blog-article.html" style="text-decoration: none;">
         <section class="home-main-section" style="background-color: #1F79FD; margin-bottom: 20px; padding: 20px; position: relative;">
-          <img src="images/generated/syntactically-sassy-stylesheets.png" alt="image d'une femme" class="home-main-blogim" style="max-width: 100%; height: auto;">
+          <img src="images/generated/syntactically-sassy-stylesheets.png" alt="Image d'une femme fumant une cigarette" class="home-main-blogim" style="max-width: 100%; height: auto;">
           <div class="overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background-color: #1F79FD;">
-            <h2 style="color: white; font-family: serif; margin: 0; text-align: center; font-weight: bold; line-height: 1; padding: 5px;">Êtes-vous Incroyable avec Sass ?</h2>
+            <h2 style="color: white; font-family: serif; margin: 0; text-align: center; text-transform: capitalize; font-weight: bold; line-height: 1; padding: 5px;">Feuilles de style syntaxiquement chics?</h2>
           </div>
         </section>
       </a>
-    
-      <a href="webpages/francais/blog-article.html" style="text-decoration: none;">
+
+      <a href="webpages/french/blog-article.html" style="text-decoration: none;">
         <section class="home-main-section" style="background-color: #1F79FD; margin-bottom: 20px; padding: 20px; position: relative;">
-          <img src="images/generated/byte-burger.png" alt="Image de l'homme vérifiant son téléphone " class="home-main-blogim" style="max-width: 100%; height: auto;">
+          <img src="images/generated/byte-burger.png" alt="Image d'un homme consultant son téléphone" class="home-main-blogim" style="max-width: 100%; height: auto;">
           <div class="overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background-color: #1F79FD;">
-            <h2 style="color: white; font-family: serif; margin: 0; text-align: center; ; font-weight: bold; line-height: 1; padding: 5px;">Mordre plus que ce que vous pouvez mâcher ?</h2>
+            <h2 style="color: white; font-family: serif; margin: 0; text-align: center; text-transform: capitalize; font-weight: bold; line-height: 1; padding: 5px;">Croquez plus que vous ne pouvez mâcher?</h2>
           </div>
         </section>
       </a>
     </div>
-
   </main>
 
-  <!-- Footer Section -->
+  <!-- footer -->
   <footer class="footer bg-primary py-4">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -233,59 +291,39 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="index-fr.html">Accueil</a>
-              <a class="nav-link" href="webpages/francais/services/services.html">Services</a>
-              <a class="nav-link" href="webpages/francais/portfolio.html">Portefeuille</a>
-              <a class="nav-link" href="webpages/francais/blog.html">Blogue</a>
-              <a class="nav-link" href="webpages/francais/about-us/about-us.html">À propos</a>
+              <a class="nav-link" href="webpages/french/services/services.html">Services</a>
+              <a class="nav-link" href="webpages/french/portfolio.html">Portfolio</a>
+              <a class="nav-link" href="webpages/french/blog.html">Blog</a>
+              <a class="nav-link" href="webpages/french/about-us/about-us.html">À propos de nous</a>
             </div>
           </div>
         </div>
       </nav>
-  
+
       <div class="row justify-content-center mt-3">
         <div class="col-md-auto">
-          <a href="https://www.facebook.com/" target="_blank" class="text-white me-2"><img src="images/facebook.svg"
-              alt="Logo Facebook" class="social-icon"></a>
-          <a href="https://www.linkedin.com/in/james-fallouh-025763298/" target="_blank" class="text-white me-2"><img src="images/linkedin.svg"
-              alt="Logo LinkedIn" class="social-icon"></a>
-          <a href="https://instagram.com/" target="_blank" class="text-white me-2"><img src="images/instagram.svg"
-              alt="Logo Instagram" class="social-icon"></a>
-          <a href="https://x.com/MfallouhJames" target="_blank" class="text-white me-2"><img src="images/twitter-x.svg"
-              alt="Logo Twitter" class="social-icon"></a>
+          <a href="https://www.facebook.com/profile.php?id=100090063202125" target="_blank" class="text-white me-2">
+            <img src="images/facebook.svg" alt="Logo Facebook" class="social-icon">
+          </a>
+          <a href="https://www.linkedin.com/in/james-fallouh-025763298/" target="_blank" class="text-white me-2">
+            <img src="images/linkedin.svg" alt="Logo LinkedIn" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/jamesfallouh/" target="_blank" class="text-white me-2">
+            <img src="images/instagram.svg" alt="Logo Instagram" class="social-icon">
+          </a>
+          <a href="https://x.com/MfallouhJames" target="_blank" class="text-white me-2">
+            <img src="images/twitter-x.svg" alt="Logo Twitter" class="social-icon">
+          </a>
         </div>
       </div>
-  
+
       <div class="row justify-content-center mt-3">
         <div class="col-md-auto text-white text-center">
-          <p>&copy; 2024 Awesome Code Crafter Hub. Tous droits réservés.</p>
+          <p>&copy; 2024 Hub de Codeurs Géniaux. Tous droits réservés.</p>
         </div>
       </div>
     </div>
   </footer>
-
-  <!-- optional javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-
-    <script>
-      var servicesLink = document.querySelector('.nav-item.services-dropdown .dropdown-toggle'); /* selects the nav-link anchor element in the dropdown menu */
-      servicesLink.addEventListener('click', function (event) { /* listens for the user to click */
-        event.preventDefault(); /* prevents the dropdown from expanding */
-        window.location.href ="webpages/francais/services/services.html"; /* redirects to services pages */
-      });
-    </script>
-  
-    <!-- for about us -->
-    <script>
-      var aboutUsLink = document.querySelector('.nav-item.about-us-dropdown .dropdown-toggle');
-      aboutUsLink.addEventListener('click', function (event) {
-        event.preventDefault();
-        window.location.href = "webpages/english/about-us/about-us.html";
-      });
-    </script>
-
-
 </body>
 
 </html>
