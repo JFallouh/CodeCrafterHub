@@ -1,62 +1,473 @@
 <!DOCTYPE html>
 <!-- 
-Class: WEBSITE DESIGN - 420-WB4-AB
-Assignment: Final Project
+Classe : DESIGN DE SITE WEB - 420-WB4-AB
+Projet final
 
-Team 4
+Équipe 4
     Craig Collins (1038789)
     James Fallouh (6171620)
     SeyedehFatemeh Fekribaygi (6284424)
 
-    Current Date: TBD
-    Filename: index.html
+    Date actuelle : 20-02-2024
+    Nom du fichier : james-fallouh.html
 
-    Purpose: This the portfolio  homepage.
+    Objectif : Ceci est la page biographique de James Fallouh.
 -->
 
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="bootstrap template">
+  <!-- Balises méta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="page à propos de nous pour Awesome Code Crafters Hub">
+  <meta name="author" content="Équipe 4, Craig Collins, James Fallouh, SeyedehFatemeh Fekribaygi">
+  <meta name="keywords" content="James Fallouh, biographie personnelle">
 
-    <!-- Favicon -->
+  <!-- Favicon -->
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles/custom.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../../styles/custom.css">
+  <link rel="stylesheet" href="../../../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- Custom SCSS -->
-    <link rel="stylesheet" href="../styles/main.css">
+  <title lang="fr">James Fallouh</title>
 
+  <style>
+    #project-list {
+      list-style: none;
+      padding-left: 0;
+    }
 
-    <title lang="en">Bootstrap Template</title>
-    <title lang="fr">Modèle de Bootstrap</title>
+    #project-list li {
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #f8f9fa;
+      transition: background-color 0.5s;
+    }
 
+    #project-list li:hover {
+      background-color: #e9ecef;
+    }
+
+    #project-list li a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    #project-list li a:hover {
+      color: #0056b3;
+    }
+
+    #project-list li strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* Styles du logo */
+    .navbar-brand {
+      font-size: 30px;
+      font-weight: bold;
+      color: #007bff; /* Couleur bleue pour 'JF' */
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #ffffff; /* Arrière-plan blanc */
+      text-shadow: none;
+      border: 3px solid #ffffff;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 15px rgba(0, 86, 179, 0.7);
+    }
+  </style>
 </head>
 
 <body>
-    <!-- bootstrap header / navigation bar -->
+  <!-- En-tête Bootstrap / Barre de navigation -->
+  <nav class="navbar navbar-expand-lg bg-primary bg-gradient text-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">JF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-    <!-- navbar links -->
-    
-    <!-- bootstrap jumbotron -->
-    
-    <!-- header and hero image -->
+          <!-- Page d'accueil -->
+          <li class="nav-item ">
+            <a class="nav-link active text-white" aria-current="page" href="../../../index-en.html">Accueil</a>
+          </li>
 
-    <!-- main content area -->
+          <!-- Page de services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="../services/services.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu bg-primary bg-gradient text-white">
+              <li><a class="dropdown-item text-white" href="../services/programming.html">Programmation</a></li>
+              <li><a class="dropdown-item text-white" href="../services/web-development.html">Développement Web</a></li>
+              <li><a class="dropdown-item text-white" href="../services/databases.html">Bases de données</a></li>
+              <li><a class="dropdown-item text-white" href="../services/website-design.html">Conception de site Web</a></li>
+            </ul>
+          </li>
 
-    <!-- footer -->
+          <!-- Portfolio-->
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../portfolio.html">Portfolio</a>
+          </li>
 
-    <!-- optional javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+          <!-- Blog -->
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../blog.html">Blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="about-us.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              À propos de nous
+            </a>
+            <ul class="dropdown-menu bg-primary bg-gradient ">
+              <li><a class="dropdown-item text-white" href="james-fallouh.html">James Fallouh</a></li>
+            </ul>
+          </li>
+
+          <!-- Contactez-nous -->
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../contact-us.html">Contactez-nous</a>
+          </li>
+
+          <!-- Télécharger le CV -->
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../../../files/CV.pdf" download>Télécharger le CV</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+          <a href="../../francais/a-propos/a-propos.html" class="text-white">Français</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron Bootstrap -->
+
+  <!-- En-tête et image principale -->
+  <header class="visually-hidden">
+    <h1 class="text-white">James Fallouh - Biographie</h1>
+  </header>
+
+  <!-- Main -->
+
+  <!-- Contenu à propos de la personne -->
+
+  <!-- Apparence sur ordinateur de bureau -->
+  <div class="d-none d-md-flex justify-content-center" style="background-color: #D3D3D3; padding: 20px;">
+    <div class="col-md-9 mb-4 p-3"
+      style="border: 2px solid #dee2e6; border-radius: 20px; background-color: #fff; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
+      <div class="d-md-flex flex-md-row flex-column justify-content-between align-items-start">
+        <img src="../../../images/RealJames.JPG" alt="image de James Fallouh"
+          class="rounded mr-md-3 mb-md-0 mb-3 p-md-4" style="width: 500px; height: 500px; border-radius: 20px;"
+          title="James Fallouh">
+        <div class="article-section" style="padding: 20px;">
+          <h2
+            style="color: #007bff; font-family: serif; margin-bottom: 20px; text-align: center; font-size: 60px; font-weight: bold;">
+            James Fallouh
+          </h2>
+          <p style="font-family: sans-serif; margin: 0; font-size: 30px; line-height: 1.6; color: #495057;">
+            James Fallouh est un programmeur aspirant motivé et soucieux des détails avec une solide base en développement full-stack et en gestion de réseaux. Actuellement, il poursuit un ACS en développement full-stack au John Abbott College. James est désireux d'appliquer ses compétences techniques et d'élargir son expertise dans un environnement collaboratif. Avec une expérience pratique en Java, C#, Python et diverses technologies web, il a fait ses preuves dans des rôles tels que technicien de service et technicien en informatique. James est déterminé à contribuer efficacement à une équipe dynamique et à faire progresser sa carrière dans la technologie.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apparence sur mobile -->
+  <div class="d-md-none justify-content-center" style="background-color: #D3D3D3; padding: 20px;">
+    <div class="col-md-9 mb-4 p-3"
+      style="border: 2px solid #dee2e6; border-radius: 20px; background-color: #fff; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
+      <img src="../../../images/RealJames.JPG" alt="image de James Fallouh" class="rounded mx-auto d-block mb-4"
+        style="max-width: 100%; height: auto; border-radius: 20px;" title="James Fallouh">
+      <div class="article-section" style="padding: 20px;">
+        <h2
+          style="color: #007bff; font-family: serif; margin-bottom: 20px; text-align: center; font-size: 40px; font-weight: bold;">
+          James Fallouh
+        </h2>
+        <p style="font-family: sans-serif; margin: 0; font-size: 20px; line-height: 1.6; color: #495057; text-align: left;">
+          James Fallouh est un programmeur aspirant motivé et soucieux des détails avec une solide base en développement full-stack et en gestion de réseaux. Actuellement, il poursuit un ACS en développement full-stack au John Abbott College. James est désireux d'appliquer ses compétences techniques et d'élargir son expertise dans un environnement collaboratif. Avec une expérience pratique en Java, C#, Python et diverses technologies web, il a fait ses preuves dans des rôles tels que technicien de service et technicien en informatique. James est déterminé à contribuer efficacement à une équipe dynamique et à faire progresser sa carrière dans la technologie.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- En-tête principal -->
+  <section class="main-header bg-primary bg-gradient">
+    <h2 class="text-white">Curriculum Vitae</h2>
+  </section>
+
+  <!-- Section du Curriculum Vitae-->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <!-- Colonne de gauche du CV -->
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h2 id="craig-collins-heading" class="card-title text-center mt-4 mb-4 text-primary">James Fallouh</h2>
+            <p class="card-text">Programmeur aspirant motivé et soucieux des détails avec une solide base en développement full-stack et en gestion de réseaux. À la recherche d'un poste de programmeur débutant pour appliquer et développer mes compétences techniques dans un environnement collaboratif.</p>
+            <div class="cv-section mt-4 mb-4">
+              <h3 class="text-primary">Compétences techniques</h3>
+              <ul class="list-unstyled">
+                <li>Expérience : 6 ans en tant que technicien informatique</li>
+                <li>Langues : Bilingue (anglais, français)</li>
+                <li>Expérience avec Git</li>
+                <li>IDE Jet Brain (IntelliJ, WebStorm, etc.), Eclipse, Visual Studio</li>
+                <li>C# ASP.net</li>
+                <li>Frontend : React, Angular, Vue, Bootstrap, Javascript, HTML, CSS</li>
+                <li>Backend : Spring, Laravel, Express, Java, JavaScript (node.js), PHP, Python</li>
+                <li>Service à la clientèle et travail de bureau</li>
+                <li>Maîtrise des outils MS Office (Word, Excel, Access, PowerPoint)</li>
+                <li>Outils informatiques tels que Service-Now, SCCM, VPN, Active Directory</li>
+                <li>Systèmes d'exploitation : Linux, Windows, Mac OS</li>
+                <li>Administration de serveurs et réseaux</li>
+                <li>Virtualisation avec VMware et Oracle Box</li>
+                <li>Bases de données : PostgreSQL, MySQL, Microsoft SQL Server, MongoDB</li>
+                <li>Configuration de routeurs, commutateurs et périphériques pour l'accès aux ressources réseau locales et distantes</li>
+                <li>Configuration et dépannage des VLAN, WLAN et routage inter-VLAN</li>
+                <li>Mise en place de la redondance avec STP et EtherChannel</li>
+                <li>Connectivité des petits réseaux en utilisant les meilleures pratiques de sécurité</li>
+                <li>Soutien pour des réseaux disponibles et fiables en utilisant l'adressage dynamique et les protocoles de redondance de passerelle</li>
+                <li>Configuration et gestion avancée des serveurs Windows (2012-2022), y compris les installations de serveur core</li>
+                <li>Administration de pare-feu via interfaces graphiques et en ligne de commande (CLI), mise en place d'Active Directory et gestion des stratégies de groupe</li>
+                <li>Configuration DNS, DHCP et déploiement Exchange 2019</li>
+                <li>Analyse réseau avec Wireshark et migration de données avec l'outil User State Migration Tool</li>
+                <li>Administration Office 365 et audit des événements système</li>
+              </ul>
+            </div>
+
+            <div class="cv-section mt-4 mb-4">
+              <h3 class="text-primary">Projets personnels</h3>
+              <ul id="project-list">
+                <li>
+                  <strong>Système de prise de rendez-vous médical (05/2024 - 08/2024)</strong>
+                  <p>Cette application facilite la gestion des rendez-vous des patients, offrant des fonctionnalités similaires à celles d'un système de gestion de bibliothèque mais adaptées à un environnement de soins de santé. <br>
+                    <strong>Frontend :</strong> React <br>
+                    <strong>Backend :</strong> Spring
+                  </p>
+                </li>
+                <li>
+                  <strong>Application de gestion d'événements (04/2024 - 06/2024)</strong>
+                  <p>Cette application Web permet aux utilisateurs d'ajouter, d'afficher et de supprimer des détails d'événements de manière efficace. <br>
+                    <strong>Frontend :</strong> React <br>
+                    <strong>Backend :</strong> Express (TypeScript)
+                  </p>
+                </li>
+                <li>
+                  <strong>Système de gestion de librairie en ligne (02/2024 - 04/2024)</strong>
+                  <p>Ce système aide le personnel de la librairie à gérer leur inventaire et offre une interface pour que les clients puissent consulter les livres disponibles et faire des demandes d'achat. <br>
+                    <strong>Frontend :</strong> Blade, CSS, Bootstrap <br>
+                    <strong>Backend :</strong> Spring MVC + Spring Security
+                  </p>
+                </li>
+                <li>
+                  <strong>Système de réservation d'hôtel (01/2024 - 03/2024)</strong>
+                  <p>Cette application Web permet aux clients potentiels de réserver des chambres en fonction de la disponibilité. <br>
+                    <strong>Frontend :</strong> HTML, CSS, Bootstrap <br>
+                    <strong>Backend :</strong> Laravel <br>
+                    <strong>API Web :</strong> API Web publique pour les informations météorologiques pour l'emplacement de l'hôtel.
+                  </p>
+                </li>
+                <li>
+                  <strong>Code Crafter Hub (12/2023 - 02/2024)</strong>
+                  <p>Cette application Web permet aux utilisateurs de poster leurs applications et aux employeurs de trouver des talents. <br>
+                    <strong>Frontend :</strong> Bootstrap <br>
+                    <strong>Backend :</strong> Express Framework (utilisant TypeScript)
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-section">
+              <h3 class="text-primary">Expérience professionnelle</h3>
+
+              <h3>Service Desk (Février 2023 - Août 2023)</h3>
+              <p><strong>Entreprise :</strong> Apptoza Agency / Bombardier, Dorval, QC, Canada</p>
+              <ul>
+                <li>Soutien technique de premier niveau</li>
+                <li>Utilisation d'outils tels que SCCM, Service-Now, SafeNet</li>
+                <li>Gestion de Pulse Secure et réinitialisation des mots de passe</li>
+              </ul>
+
+              <h3>Technicien informatique (Avril 2022 - Mai 2022, Stage)</h3>
+              <p><strong>Entreprise :</strong> IntelGenx, Saint-Laurent, QC, Canada</p>
+              <ul>
+                <li>Soutien de premier niveau</li>
+                <li>Formatage et préparation des PC pour les nouveaux utilisateurs</li>
+                <li>Documentation</li>
+              </ul>
+
+              <h3>Technicien informatique (Février 2022 - Avril 2022, Stage)</h3>
+              <p><strong>Entreprise :</strong> Thread Collective, Saint-Laurent, QC, Canada</p>
+              <ul>
+                <li>Installation de logiciels de sécurité</li>
+                <li>Formatage et préparation des PC/MAC pour les nouveaux utilisateurs</li>
+                <li>Documentation</li>
+              </ul>
+            </div>
+
+            <div class="cv-section">
+              <h3 class="mb-4 text-primary">Éducation</h3>
+
+              <h3>Formation continue</h3>
+              <ul>
+                <li>Attestation d'études collégiales en Développement Full-Stack, John Abbott College, Sainte-Anne-de-Bellevue, QC, Canada, 2023</li>
+                <li>Attestation d'études collégiales en Gestion de Réseau, John Abbott College, Sainte-Anne-de-Bellevue, QC, Canada, 2022</li>
+              </ul>
+
+              <h3>Éducation universitaire</h3>
+              <ul>
+                <li>Master en Ingénierie Géomatique, Université de Damas, Damas, Syrie, 2016</li>
+                <li>Licence en Ingénierie Géomatique, Université d'Alep, Alep, Syrie, 2010-2015</li>
+              </ul>
+
+              <h3 class="mb-4 text-primary">Formation supplémentaire</h3>
+
+              <ul>
+                <li>CCNA v7 Switching, Routing, and Wireless Essentials, Cisco Networking Academy (cours en ligne), 2021
+                </li>
+                <li>CCNA v7 Enterprise Networking, Security, and Automation, Cisco Networking Academy (cours en ligne),
+                  2021</li>
+                <li>Fondations du Cloud, AWS Academy (cours en ligne), 2022</li>
+                <li>Google Cloud Fundamentals : Core Infrastructure, Coursera (cours en ligne), 2022</li>
+              </ul>
+
+              <h2>Autres expériences</h2>
+              <ul>
+                <li>Technicien en robotique, Sager Inc (Produits alimentaires), Montréal, Québec, Canada, 2021-2022</li>
+                <li>Opérateur de machine, Giesecke & Devrient, Dorval, Québec, Canada, 2019-2020</li>
+                <li>Géomètre, Hamid Keyrouz Bureau, Zahlé, Beqaa, Liban, 2019-2020</li>
+              </ul>
+
+              <h2>Autres compétences</h2>
+              <ul>
+                <li>Utilisateur excellent de la plupart des appareils de relevé, y compris les stations totales, le nivellement et les dispositifs GPS</li>
+                <li>Utilisateur excellent d'AutoCAD, Civil 3D, ArcGIS, MATLAB, QGIS, Map3D</li>
+              </ul>
+
+              <!-- Section CV en bas -->
+              <div id="cv-section">
+                <h2>Télécharger le CV</h2>
+                <p>Cliquez sur le bouton ci-dessous pour télécharger mon CV en format PDF :</p>
+                <a href="CV/James_Fallouh_CV.pdf" class="btn btn-primary cv-button" download>Télécharger le CV</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Colonne des cartes à droite -->
+      <div class="col-md-4">
+        <!-- Carte LinkedIn -->
+        <div class="card mb-4 mt-4">
+          <img src="../../../images/generated/linked-in-handshake.png"
+            alt="image de deux personnes se serrant la main lors d'une rencontre LinkedIn" class="card-img-top rounded-circle"
+            style="padding: 20px;" title="Poignée de main lors d'une rencontre LinkedIn">
+          <div class="card-body">
+            <!-- Bouton LinkedIn -->
+            <div class="text-center mt-4">
+              <a href="https://www.linkedin.com/in/james-fallouh-025763298/" class="btn btn-primary mr-2"
+                style="float: none !important; margin: 0 !important;">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte Email -->
+        <div class="card">
+          <img src="../../../images/generated/email-sent.png" alt="image d'un email envoyé sur un écran tactile"
+            class="card-img-top rounded-circle" style="padding: 20px;" title="Confirmation d'envoi d'email sur écran tactile">
+          <div class="card-body">
+            <!-- Bouton Email -->
+            <div class="text-center mt-4">
+              <a href="mailto:jamesfallouh@outlook.com" class="btn btn-primary"
+                style="float: none !important; margin: 0 !important;">
+                <i class="far fa-envelope"></i> Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section GitHub -->
+  <section class="container mt-5">
+    <ul id="project-list" class="list-unstyled">
+      <!-- repos apparaissent ici -->
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-primary py-4 mt-5">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../../../index-en.html">Accueil</a>
+              <a class="nav-link" href="../services/services.html">Services</a>
+              <a class="nav-link" href="../portfolio.html">Portfolio</a>
+              <a class="nav-link" href="../blog.html">Blog</a>
+              <a class="nav-link" href="about-us.html">À propos de nous</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-auto">
+          <a href="https://www.facebook.com/profile.php?id=100090063202125" target="_blank" class="text-white me-2"><img
+              src="../../../images/facebook.svg" alt="Logo Facebook" class="social-icon"></a>
+          <a href="https://www.linkedin.com/in/james-fallouh-025763298/" target="_blank" class="text-white me-2"><img
+              src="../../../images/linkedin.svg" alt="Logo LinkedIn" class="social-icon"></a>
+          <a href="https://www.instagram.com/jamesfallouh/" target="_blank" class="text-white me-2"><img
+              src="../../../images/instagram.svg" alt="Logo Instagram" class="social-icon"></a>
+          <a href="https://twitter.com/" target="_blank" class="text-white me-2"><img
+              src="../../../images/twitter-x.svg" alt="Logo Twitter" class="social-icon"></a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-auto text-white text-center">
+          <p>&copy; 2024 Awesome Code Crafter Hub. Tous droits réservés.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript optionnel -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
