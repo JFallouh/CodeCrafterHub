@@ -1,19 +1,4 @@
 <!DOCTYPE html>
-<!-- 
-Class: WEBSITE DESIGN - 420-WB4-AB
-Assignment: Final Project
-
-Team 4
-    Craig Collins (1038789)
-    James Fallouh (6171620)
-    SeyedehFatemeh Fekribaygi (6284424)
-
-    Current Date: TBD
-    Filename: index.html
-
-    Purpose: This a website homepage.
--->
-
 <html lang="en">
 
 <head>
@@ -21,6 +6,8 @@ Team 4
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="bootstrap template">
+  <meta name="author" content="Team 4, Craig Collins, James Fallouh, SeyedehFatemeh Fekribaygi">
+  <meta name="keywords" content="coding, web development, programming, web design, blog">
 
   <!-- Favicon -->
 
@@ -31,13 +18,7 @@ Team 4
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../../styles/custom.css">
 
-  <!-- Custom SCSS -->
-  <link rel="stylesheet" href="styles/custom.css">
-
-  <title lang="en">Portfolio </title>
-  <!--<title lang="en">Bootstrap Template</title>-->
-
-
+  <title lang="en">Portfolio</title>
 </head>
 
 <body>
@@ -45,11 +26,8 @@ Team 4
   <!-- bootstrap header / navigation bar -->
   <nav class="navbar navbar-expand-lg bg-primary bg-gradient text-white">
     <div class="container-fluid">
-      <img class="navbar-brand rounded rounded-4" alt="Awesome code crafter logo" src="../../Vista-Logos-Blue/logo-png.png" height="100" width="100">
-      <!--  <a class="navbar-brand" href="#">Navbar</a>   -->
+      <a class="navbar-brand" href="#" style="font-size: 30px; font-weight: bold; color: #007bff; width: 70px; height: 70px; background-color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">JF</a>
 
-      <!--<button class="btn  btn-secondary " type="submit">Search</button>-->
-      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -57,87 +35,72 @@ Team 4
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <!-- HOME PAGE -->
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="../../index-en.html">Home</a>
           </li>
 
           <!-- Service Page-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="services/services.html" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
+              data-bs-toggle="dropdown" aria-expanded="false">Services</a>
             <ul class="dropdown-menu bg-primary bg-gradient text-white">
-              <li><a class="dropdown-item text-white" href="services/programming.html">Programming</a>
-              </li>
-              <li><a class="dropdown-item text-white" href="services/web-development.html">Web
-                  Development</a></li>
-              <!-- <li><hr class="dropdown-divider"></li>-->
+              <li><a class="dropdown-item text-white" href="services/services.html">Services</a></li>
+              <li><a class="dropdown-item text-white" href="services/programming.html">Programming</a></li>
+              <li><a class="dropdown-item text-white" href="services/web-development.html">Web Development</a></li>
               <li><a class="dropdown-item text-white" href="services/databases.html">Databases</a></li>
-              <li><a class="dropdown-item text-white" href="services/website-design.html">Website
-                  Design</a></li>
+              <li><a class="dropdown-item text-white" href="services/website-design.html">Website Design</a></li>
             </ul>
           </li>
-          <!-- portfolio-->
+
+          <!-- Portfolio-->
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="portfolio.html">Portfolio</a>
           </li>
+
           <!--Blog-->
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="blog.html">Blog</a>
           </li>
 
+          <!-- About Us -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="about-us/about-us.html" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              About Us
-            </a>
-            <ul class="dropdown-menu bg-primary bg-gradient ">
-              <li><a class="dropdown-item text-white" href="about-us/craig-collins.html">Craig
-                  Collins</a></li>
-              <li><a class="dropdown-item text-white" href="about-us/james-fallouh.html">James
-                  Fallouh</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
-              <li><a class="dropdown-item text-white" href="about-us/fatemeh-fekribaygi.html">SeyedehFatemeh
-                  Fekribaygi</a></li>
+              data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+            <ul class="dropdown-menu bg-primary bg-gradient">
+              <li><a class="dropdown-item text-white" href="about-us/about-us.html">About Us</a></li>
+              <li><a class="dropdown-item text-white" href="about-us/james-fallouh.html">James Fallouh</a></li>
             </ul>
           </li>
+
           <!--Contact Us-->
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="contact-us.html">Contact
-              Us</a>
+            <a class="nav-link active text-white" aria-current="page" href="contact-us.html">Contact Us</a>
           </li>
-
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <a href="../francais/portefeuille-de-travail.html" class="text-white">Français</a>
+          <input id="NavSearch" name="NavSearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <a href="../francais/portefeuille-de-travail.html" class="text-white me-3">Français</a>
+          <a href="../../james_fallouh_cv.pdf" class="btn btn-light text-primary">Download CV</a>
         </form>
       </div>
     </div>
   </nav>
   <!-- navbar links -->
 
-  <!-- bootstrap jumbotron -->
-
   <!-- header and hero image -->
   <header class="visually-hidden">
     <h1 class="text-white">Portfolio</h1>
   </header>
+
   <!-- main-->
   <main>
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col d-flex flex-column align-items-center p-3">
           <div class="portfolio-grid-section">
-            <h2 class="portfolio-h2"> MovinOn DBSM</h2>
-            <p>The project involves the development of a Database Management System (DBMS) tailored for MovinOn, a
-              fictional moving company. The DBMS aims to streamline various operations within the company, including
-              managing job orders, tracking storage units, handling employee data, and generating financial reports. The
-              system is designed to enhance efficiency, improve data accuracy, and provide valuable insights for
-              decision-making.</p>
-              <a href="#">learn more</a>
-            
+            <h2 class="portfolio-h2">MovinOn DBSM</h2>
+            <p>The project involves the development of a Database Management System (DBMS) tailored for MovinOn, a fictional moving company. The DBMS aims to streamline various operations within the company, including managing job orders, tracking storage units, handling employee data, and generating financial reports. The system is designed to enhance efficiency, improve data accuracy, and provide valuable insights for decision-making.</p>
+            <a href="#">learn more</a>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center p-3">
@@ -149,44 +112,22 @@ Team 4
       <div class="row justify-content-center">
         <div class="col d-flex flex-column align-items-center p-3">
           <div class="portfolio-grid-section">
-            <h2 class="portfolio-h2">Universal Language Studio Website Design
-              </h2>
-              <p>Dynamic website design tailored for a music store, seamlessly integrating features for instrument
-                rentals, sales, luthiery services, and music lessons. Through intuitive navigation and innovative code
-                creation, our portfolio demonstrates a harmonious fusion of functionality and creativity, providing
-                users with an immersive and enriching online experience within the realm of musical exploration.
-              </p>
-              <a href="#">learn more</a>
+            <h2 class="portfolio-h2">Universal Language Studio Website Design</h2>
+            <p>Dynamic website design tailored for a music store, seamlessly integrating features for instrument rentals, sales, luthiery services, and music lessons. Through intuitive navigation and innovative code creation, our portfolio demonstrates a harmonious fusion of functionality and creativity, providing users with an immersive and enriching online experience within the realm of musical exploration.</p>
+            <a href="#">learn more</a>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center p-3">
           <div class="portfolio-grid-section">
-            <img src="../../images/music-Store.jpg" class="img-fluid" alt="image of gitar store" title="gitar store">
+            <img src="../../images/music-Store.jpg" class="img-fluid" alt="image of guitar store" title="guitar store">
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
   </main>
 
-
-
-
-
-
-
   <!-- Footer -->
-  <footer class="footer bg-primary py-4 mt-5">
+  <footer class="footer bg-primary py-4">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
@@ -208,14 +149,18 @@ Team 4
 
       <div class="row justify-content-center mt-3">
         <div class="col-md-auto">
-          <a href="https://www.facebook.com/" target="_blank"><img src="../../images/facebook.svg"
-            alt="black and white Facebook logo" class="pr-4">&nbsp;</a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="../../images/linkedin.svg"
-            alt="black and white Facebook logo" class="pr-4">&nbsp;</a>
-        <a href="https://instagram.com/" target="_blank"><img src="../../images/instagram.svg"
-            alt="black and white Twitter logo" class="pr-4">&nbsp;</a>
-        <a href="https://twitter.com/" target="_blank"><img src="../../images/twitter-x.svg"
-            alt="black and white Twitter logo" class="pr-4">&nbsp;</a>
+          <a href="https://www.facebook.com/profile.php?id=100090063202125" target="_blank" class="text-white me-2">
+            <img src="../../images/facebook.svg" alt="Facebook logo" class="social-icon">
+          </a>
+          <a href="https://www.linkedin.com/in/james-fallouh-025763298/" target="_blank" class="text-white me-2">
+            <img src="../../images/linkedin.svg" alt="LinkedIn logo" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/jamesfallouh/" target="_blank" class="text-white me-2">
+            <img src="../../images/instagram.svg" alt="Instagram logo" class="social-icon">
+          </a>
+          <a href="https://x.com/MfallouhJames" target="_blank" class="text-white me-2">
+            <img src="../../images/twitter-x.svg" alt="Twitter logo" class="social-icon">
+          </a>
         </div>
       </div>
 
@@ -226,7 +171,6 @@ Team 4
       </div>
     </div>
   </footer>
-
 
   <!-- Optional Javascript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
