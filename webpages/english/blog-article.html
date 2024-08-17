@@ -48,6 +48,29 @@ Team 4
             background-color: black;
             border-radius: 50%;
         }
+
+        /* Logo Styles */
+        .navbar-brand {
+            font-size: 30px;
+            font-weight: bold;
+            color: #007bff; /* Blue color for 'JF' */
+            cursor: pointer;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #ffffff; /* White background */
+            text-shadow: none;
+            border: 3px solid #ffffff;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px rgba(0, 86, 179, 0.7);
+        }
     </style>
 
     <script src="../../Script/script-2.js" defer></script>
@@ -58,12 +81,7 @@ Team 4
     <!-- bootstrap header / navigation bar -->
     <nav class="navbar navbar-expand-lg bg-primary bg-gradient text-white">
         <div class="container-fluid">
-            <img class="navbar-brand rounded rounded-4" alt="Awesome code crafter logo"
-                src="../../Vista-Logos-Blue/logo-png.png" height="100" width="100">
-
-            <!--  <a class="navbar-brand" href="#">Navbar</a>   -->
-
-            <!--<button class="btn  btn-secondary " type="submit">Search</button>-->
+            <a class="navbar-brand" href="#">JF</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,68 +101,58 @@ Team 4
                             Services
                         </a>
                         <ul class="dropdown-menu bg-primary bg-gradient text-white">
-                            <li><a class="dropdown-item text-white" href="services/programming.html">Programming</a>
-                            </li>
-                            <li><a class="dropdown-item text-white" href="services/web-development.html">Web
-                                    Development</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li>-->
+                            <li><a class="dropdown-item text-white" href="services/programming.html">Programming</a></li>
+                            <li><a class="dropdown-item text-white" href="services/web-development.html">Web Development</a></li>
                             <li><a class="dropdown-item text-white" href="services/databases.html">Databases</a></li>
-                            <li><a class="dropdown-item text-white" href="services/website-design.html">Website
-                                    Design</a></li>
+                            <li><a class="dropdown-item text-white" href="services/website-design.html">Website Design</a></li>
                         </ul>
                     </li>
-                    <!-- portfolio-->
+
+                    <!-- Portfolio -->
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page"
-                            href="portfolio.html">Portfolio</a>
+                        <a class="nav-link active text-white" aria-current="page" href="portfolio.html">Portfolio</a>
                     </li>
-                    <!--Blog-->
+
+                    <!-- Blog -->
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="blog.html">Blog</a>
                     </li>
 
+                    <!-- About Us -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="about-us/about-us.html" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             About Us
                         </a>
                         <ul class="dropdown-menu bg-primary bg-gradient ">
-                            <li><a class="dropdown-item text-white" href="about-us/craig-collins.html">Craig
-                                    Collins</a></li>
-                            <li><a class="dropdown-item text-white" href="about-us/james-fallouh.html">James
-                                    Fallouh</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                            <li><a class="dropdown-item text-white"
-                                    href="about-us/fatemeh-fekribaygi.html">SeyedehFatemeh Fekribaygi</a></li>
+                            <li><a class="dropdown-item text-white" href="about-us/james-fallouh.html">James Fallouh</a></li>
                         </ul>
                     </li>
-                    <!--Contact Us-->
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="contact-us.html">Contact
-                            Us</a>
-                    </li>
 
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="contact-us.html">Contact Us</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                    <a href="../francais/articles-blogue.html" class="text-white">Français</a>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <a href="../francais/articles-blogue.html" class="text-white me-3">Français</a>
+                    <a href="james_fallouh_cv.pdf" class="btn btn-light text-primary">Download CV</a>
                 </form>
-
             </div>
+        </div>
     </nav>
     <!-- navbar links -->
 
     <!-- bootstrap jumbotron -->
 
     <!-- header and hero image -->
-
     <header class="visually-hidden">
         <h1 class="text-white">Blog Article</h1>
     </header>
 
     <!-- Main -->
     <!-- encapsulates article sections and makes container responsive-->
-
 
     <!-- Blog -->
     <div class="container">
@@ -213,8 +221,6 @@ Team 4
 
 
 </div>
-
-
 
 
     <!-- Main Header -->
@@ -331,14 +337,14 @@ Team 4
 
             <div class="row justify-content-center mt-3">
                 <div class="col-md-auto">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../../images/facebook.svg"
-                            alt="black and white Facebook logo" class="pr-4">&nbsp;</a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="../../images/linkedin.svg"
-                            alt="black and white Facebook logo" class="pr-4">&nbsp;</a>
-                    <a href="https://instagram.com/" target="_blank"><img src="../../images/instagram.svg"
-                            alt="black and white Twitter logo" class="pr-4">&nbsp;</a>
-                    <a href="https://twitter.com/" target="_blank"><img src="../../images/twitter-x.svg"
-                            alt="black and white Twitter logo" class="pr-4">&nbsp;</a>
+                    <a href="https://www.facebook.com/profile.php?id=100090063202125" target="_blank"><img src="../../images/facebook.svg"
+                            alt="Facebook logo" class="pr-4">&nbsp;</a>
+                    <a href="https://www.linkedin.com/in/james-fallouh-025763298/" target="_blank"><img src="../../images/linkedin.svg"
+                            alt="LinkedIn logo" class="pr-4">&nbsp;</a>
+                    <a href="https://www.instagram.com/jamesfallouh/" target="_blank"><img src="../../images/instagram.svg"
+                            alt="Instagram logo" class="pr-4">&nbsp;</a>
+                    <a href="https://x.com/MfallouhJames" target="_blank"><img src="../../images/twitter-x.svg"
+                            alt="Twitter logo" class="pr-4">&nbsp;</a>
                 </div>
             </div>
 
