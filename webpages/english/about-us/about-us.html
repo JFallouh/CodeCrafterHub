@@ -4,14 +4,12 @@ Class: WEBSITE DESIGN - 420-WB4-AB
 Assignment: Final Project
 
 Team 4
-    Craig Collins (1038789)
     James Fallouh (6171620)
-    SeyedehFatemeh Fekribaygi (6284424)
 
-    Current Date: 2024-02-20
-    Filename: about-us.html
+Current Date: 2024-02-20
+Filename: about-us.html
 
-    Purpose: This a the about us page for the website.
+Purpose: This is the about us page for the website.
 -->
 
 <html lang="en">
@@ -21,7 +19,7 @@ Team 4
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="about us page for Awesome Code Crafters Hub">
-  <meta name="author" content="Team 4, Craig Collins, James Fallouh, SeyedehFatemeh Fekribaygi">
+  <meta name="author" content="James Fallouh">
   <meta name="keywords" content="coding, web development, programming, web design, about us">
 
   <!-- Favicon -->
@@ -34,9 +32,32 @@ Team 4
   <link rel="stylesheet" href="../../../styles/custom.css">
   <link rel="stylesheet" href="../../../styles/main.css">
 
-  <title lang="en">Awesome Code Crafters Hub - About Us </title>
+  <title lang="en">Awesome Code Crafters Hub - About Us</title>
 
-  
+  <style>
+    /* Logo Styles */
+    .navbar-brand {
+      font-size: 30px;
+      font-weight: bold;
+      color: #007bff; /* Blue color for 'JF' */
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #ffffff; /* White background */
+      text-shadow: none;
+      border: 3px solid #ffffff;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 15px rgba(0, 86, 179, 0.7);
+    }
+  </style>
 </head>
 
 <body>
@@ -44,7 +65,7 @@ Team 4
   <!-- Bootstrap Header / Navigation Bar -->
   <nav class="navbar navbar-expand-lg bg-primary bg-gradient text-white">
     <div class="container-fluid">
-      <img class="navbar-brand rounded rounded-4" alt="Awesome code crafter logo" src="../../../Vista-Logos-Blue/logo-png.png" height="100" width="100">
+      <a class="navbar-brand" href="#">JF</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -79,13 +100,16 @@ Team 4
               About Us
             </a>
             <ul class="dropdown-menu bg-primary bg-gradient ">
-<!--               <li><a class="dropdown-item text-white" href="craig-collins.html">Craig Collins</a></li> -->
               <li><a class="dropdown-item text-white" href="james-fallouh.html">James Fallouh</a></li>
-<!--               <li><a class="dropdown-item text-white" href="fatemeh-fekribaygi.html">SeyedehFatemeh Fekribaygi</a></li> -->
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="../contact-us.html">Contact Us</a>
+          </li>
+
+          <!-- Download CV -->
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../../../files/CV.pdf" download>Download CV</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -97,20 +121,18 @@ Team 4
   </nav>
   <!-- Navbar Links -->
 
- 
-
   <!-- About Us Section -->
 
   <!-- Desktop Appearance  -->
   <div class="d-none d-md-flex justify-content-center" style="background-color: #D3D3D3; padding: 20px;">
     <div class="col-md-9 mb-4 p-3" style="border: 2px solid #dee2e6; border-radius: 20px; background-color: #fff; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
       <div class="d-md-flex flex-md-row flex-column justify-content-between align-items-start">
-        <img src="../../../images/generated/team-photo-about-us.png" alt="image of Craig, Fatema and James" class="rounded mr-md-3 mb-md-0 mb-3 p-md-4" style="width: 500px; height: 500px; border-radius: 20px;" title="Our Team">
+        <img src="../../../images/generated/database-management-2.png" alt="image of James Fallouh" class="rounded mr-md-3 mb-md-0 mb-3 p-md-4" style="width: 500px; height: 500px; border-radius: 20px;" title="Our Team">
         <div class="article-section" style="padding: 20px;">
           <h2 style="color: #007bff; font-family: serif; margin-bottom: 20px; text-align: center; font-size: 60px; font-weight: bold;">
             Our Team
           </h2>
-          <p style="font-family: sans-serif; margin: 0; font-size: 30px; line-height: 1.6; color: #495057;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt, arcu in vulputate aliquam, dolor ex euismod dui, vel fermentum urna ligula rutrum neque. Integer tempor scelerisque tristique. Nunc pharetra libero a ligula interdum faucibus. Quisque vel auctor tortor. Etiam mattis massa a vulputate placerat. Etiam id scelerisque felis. Aenean accumsan ac lacus ut eleifend. Praesent et congue quam. Nunc porta quis arcu ut venenatis. Proin consequat felis maximus semper iaculis.</p>
+          <p style="font-family: sans-serif; margin: 0; font-size: 30px; line-height: 1.6; color: #495057;">Detail-oriented Full Stack Developer with a robust foundation in programming, mathematical modeling, and network management. Equipped with a background in Geomatics Engineering, with hands-on experience in Visual Basic and MATLAB, and a strong understanding of the OSI model. Demonstrates comprehensive expertise in front-end and back-end development, with skills in Java, C#, Python, HTML/CSS, JavaScript/TypeScript, React, SQL, and more. Well-prepared to contribute effectively in a collaborative environment, with a proven ability to tackle complex technical challenges.</p>
         </div>
       </div>
     </div>
@@ -119,12 +141,12 @@ Team 4
   <!-- Mobile Appearance -->
   <div class="d-md-none justify-content-center" style="background-color: #D3D3D3; padding: 20px;">
     <div class="col-md-9 mb-4 p-3" style="border: 2px solid #dee2e6; border-radius: 20px; background-color: #fff; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
-      <img src="../../../images/generated/team-photo-about-us.png" alt="image of Craig, Fatema and James" class="rounded mx-auto d-block mb-4" style="max-width: 100%; height: auto; border-radius: 20px;" title="Our Team">
+      <img src="../../../images/generated/database-management-2.png" alt="image of James Fallouh" class="rounded mx-auto d-block mb-4" style="max-width: 100%; height: auto; border-radius: 20px;" title="Our Team">
       <div class="article-section" style="padding: 20px;">
         <h2 style="color: #007bff; font-family: serif; margin-bottom: 20px; text-align: center; font-size: 40px; font-weight: bold;">
           Our Team
         </h2>
-        <p style="font-family: sans-serif; margin: 0; font-size: 20px; line-height: 1.6; color: #495057;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt, arcu in vulputate aliquam, dolor ex euismod dui, vel fermentum urna ligula rutrum neque. Integer tempor scelerisque tristique. Nunc pharetra libero a ligula interdum faucibus. Quisque vel auctor tortor. Etiam mattis massa a vulputate placerat. Etiam id scelerisque felis. Aenean accumsan ac lacus ut eleifend. Praesent et congue quam. Nunc porta quis arcu ut venenatis. Proin consequat felis maximus semper iaculis.</p>
+        <p style="font-family: sans-serif; margin: 0; font-size: 20px; line-height: 1.6; color: #495057;">Detail-oriented Full Stack Developer with a robust foundation in programming, mathematical modeling, and network management. Equipped with a background in Geomatics Engineering, with hands-on experience in Visual Basic and MATLAB, and a strong understanding of the OSI model. Demonstrates comprehensive expertise in front-end and back-end development, with skills in Java, C#, Python, HTML/CSS, JavaScript/TypeScript, React, SQL, and more. Well-prepared to contribute effectively in a collaborative environment, with a proven ability to tackle complex technical challenges.</p>
       </div>
     </div>
   </div>
@@ -135,49 +157,24 @@ Team 4
   </section>
 
   <!-- Profile Cards -->
-  <!-- Craig's Card -->
   <div class="container-fluid" style="margin: 0;">
     <div class="row justify-content-center" style="background-color: lightgrey;">
       <div class="col-md-9">
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-4">
-            <div class="card" style="padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 20px 0;">
-              <img src="../../../images/RealJames.JPG" alt="image of Craig" class="card-img-top rounded-circle" height="500" style="padding: 20px;" title="Craig">
-              <div class="card-body">
-                <h2 class="card-title text-center" style="color: #0D6EFD; font-family: serif; margin: 0;">James FALLOUH</h2>
-                <p class="card-text text-center" style="font-family: sans-serif; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt, arcu in vulputate aliquam, dolor ex euismod dui, vel fermentum urna ligula rutrum neque. Integer tempor scelerisque tristique.</p>
-                <div class="text-center mt-3" style="margin-top: 1rem !important;">
-                  <a href="../about-us/RealJames.JPG" class="btn btn-primary" style="float: none !important; margin: 0 !important;">Biography</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Fatemeh's Card -->
-          <div class="col-md-4 mb-4">
-            <div class="card" style="padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 20px 0;">
-              <img src="../../../images/RealJames.JPG" alt="image of Fatema" class="card-img-top rounded-circle" height="500"  style="padding: 20px;" title="Fatema">
-              <div class="card-body">
-                <h2 class="card-title text-center" style="color: #0D6EFD; font-family: serif; margin: 0;">James FALLOUH</h2>
-                <p class="card-text text-center" style="font-family: sans-serif; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt, arcu in vulputate aliquam, dolor ex euismod dui, vel fermentum urna ligula rutrum neque. Integer tempor scelerisque tristique.</p>
-                <div class="text-center mt-3" style="margin-top: 1rem !important;">
-                  <a href="../about-us/james-fallouh.html" class="btn btn-primary" style="float: none !important; margin: 0 !important;">Biography</a>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- James' Card -->
           <div class="col-md-4 mb-4">
             <div class="card" style="padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 20px 0;">
-              <img src="../../../images/generated/james.png" alt="image of James" class="card-img-top rounded-circle" height="500"  style="padding: 20px;" title="James">
+              <img src="../../../images/RealJames.JPG" alt="image of James Fallouh" class="card-img-top rounded-circle" height="500" style="padding: 20px;" title="James Fallouh">
               <div class="card-body">
                 <h2 class="card-title text-center" style="color: #0D6EFD; font-family: serif; margin: 0;">James Fallouh</h2>
-                <p class="card-text text-center" style="font-family: sans-serif; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt, arcu in vulputate aliquam, dolor ex euismod dui, vel fermentum urna ligula rutrum neque. Integer tempor scelerisque tristique.</p>
+                <p class="card-text text-center" style="font-family: sans-serif; margin: 0;">Motivated and detail-oriented aspiring Full Stack Developer with a solid foundation in full-stack development and network management. Seeking an entry-level programming position to apply and expand my technical skills in a collaborative environment.</p>
                 <div class="text-center mt-3" style="margin-top: 1rem !important;">
                   <a href="../about-us/james-fallouh.html" class="btn btn-primary" style="float: none !important; margin: 0 !important;">Biography</a>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -194,7 +191,11 @@ Team 4
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <!-- Footer links -->
+              <a class="nav-link active" aria-current="page" href="../../../index-en.html">Home</a>
+              <a class="nav-link" href="../services/services.html">Services</a>
+              <a class="nav-link" href="../portfolio.html">Portfolio</a>
+              <a class="nav-link" href="../blog.html">Blog</a>
+              <a class="nav-link" href="../about-us/about-us.html">About Us</a>
             </div>
           </div>
         </div>
@@ -210,6 +211,12 @@ Team 4
               alt="Instagram logo" class="social-icon"></a>
           <a href="https://twitter.com/" target="_blank" class="text-white me-2"><img src="../../../images/twitter-x.svg"
               alt="Twitter logo" class="social-icon"></a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-auto text-white text-center">
+          <p>&copy; 2024 Awesome Code Crafter Hub. All rights reserved.</p>
         </div>
       </div>
     </div>
